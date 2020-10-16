@@ -1,0 +1,54 @@
+.conteiner {
+
+}
+
+.content{
+  border: 1px solid;
+  margin: 20px 50px 20px 60px
+}
+
+.img-responsive{
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+.time {
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+.show-box {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.show-image {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.show-text{
+  min-height: 390px;
+}
+.text-content{
+  margin: 15px 0;
+}
+
+.show-title {
+  font-size: 20px;
+  margin: 15px 0;
+  text-decoration: underline;
+}
+
+.show-name {
+  margin-right: 20px;
+}
+
+.name-time{
+  display: flex;
+  justify-content: flex-end;
+}

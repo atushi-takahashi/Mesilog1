@@ -1,0 +1,15 @@
+<div id="header">
+  <div class="header-box">
+    <div class="logo">Mesi log</div>
+    <ul class="list">
+      <% if user_signed_in? %>
+        <li class="list-item"><%= link_to "マイページ", users_path(current_user.id), class: "menu" %></li>
+        <li class="list-item"><%= link_to "投稿一覧", posts_path, class: "menu" %></li>
+        <li class="list-item"><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "menu" %></li>
+      <% else %>
+        <li class="list-item"><%= link_to "トップページ", root_path, class: "menu" %></li>
+        <li class="list-item"><%= link_to "サインアップ", new_user_registration_path, class: 'post menu' %></li>
+        <li class="list-item"><%= link_to "ログイン", new_user_session_path, class: 'post menu' %></li>
+      <% end %>
+    </ul>
+</div>

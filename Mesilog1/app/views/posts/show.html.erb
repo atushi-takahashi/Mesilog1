@@ -1,0 +1,24 @@
+<div class="conteiner">
+  <h1 class="text-center">投稿一覧</h1>
+  <div class="content">
+    <p class="text-center show-title"><%= @post.title %></p>
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="show-box">
+          <p class="show-image"><%= attachment_image_tag @post, :content_image, fallback: "noimage-content.png", class:"img-responsive show-image" %></p>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="show-box">
+          <p class="show-text"><%= @post.content %></p>
+        </div>
+      </div>
+    </div>
+    <div class="name-time">
+      <%= link_to user_path(@post_show.user_id) do %>
+        <p class="show-name"><%= @post_show.user.name %>さんの</p>
+      <% end %>
+      <p class="time"><%= @post.created_at.to_s(:datetime_jp) %></p>
+    </div>
+  </div>
+</div>
